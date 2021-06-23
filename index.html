@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <!-- boxicon -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Music Player</h1>
+
+    <div class="music_container" id="music_container">
+
+        <div class="music_info">
+            <h4 id="music_title">After the Rain</h4>
+            <div class="progress_container" id="progress_container">
+                <div class="progress" id="progress"></div>
+            </div>
+            <!-- //progress_container -->
+        </div>
+        <!-- // music_info -->
+
+        <audio id="audio" src="./music/After the Rain.wav"></audio>
+        
+        <div class="img_container">
+            <img id="music_cover" src="/img/unnamed.jpg" alt="">
+        </div>
+        <!-- //img_container -->
+    
+        <div class="navigation">
+            <button id="prev" class="action_btn">
+                <i class='bx bx-skip-previous'></i>
+            </button>
+
+            <button id="play" class="action_btn action_btn_big">
+                <i class='bx bx-play' ></i>
+            </button>
+
+            <button id="next" class="action_btn">
+                <i class='bx bx-skip-next' ></i>
+            </button>
+        </div>
+    </div>
+    <!-- //music_container -->
+
+    <script src="app.js"></script>
+</body>
+</html>
