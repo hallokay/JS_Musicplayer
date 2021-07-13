@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,12 +16,12 @@ body {
 
 .music_container {
   /* margin-top: 1rem; */
+  position: relative;
+  display: flex;
   background: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
-  display: flex;
   padding: 20px 30px;
-  position: relative;
   margin: 100px 0px;
   z-index: 10;
 }
@@ -31,13 +31,13 @@ body {
   width: 110px;
 }
 #music_cover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: inherit;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  height: 110px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   animation: rotate 3s linear infinite;
 
   animation-play-state: paused;

@@ -61,7 +61,7 @@ function prevSong () {
         songIndex--;
         if(songIndex < 0) {
                 songIndex = songs.length -1
-                // 왜 -1을 썼는지 궁금
+                
         }
         loadSong(songs[songIndex]);
         playSong();
@@ -85,9 +85,7 @@ nextBtn.addEventListener('click', nextSong);
 
 function updateProgress (e) {
  const {duration, currentTime} = e.srcElement;
-//  내장되어있는 정보인지...
-// duration - 총길이 
-//  console.log(duration, currentTime);
+
 
 const progressPercent = (currentTime / duration ) * 100;
 progress.style.width = `${progressPercent}%`;
