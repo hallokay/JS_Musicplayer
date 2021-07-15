@@ -6,33 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
 
-    <!-- boxicon -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+      <!-- boxicon -->
+      <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+      <!-- CSS -->
+      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Music Player</h1>
+    <h1>music Player</h1>
 
     <div class="music_container" id="music_container">
-
+        <!-- 음악정보(이름, 플레이바) / 오디오 / 앨범 커버(이미지) / 네비게이션-->
         <div class="music_info">
-            <h4 id="music_title">After the Rain</h4>
-            <div class="progress_container" id="progress_container">
-                <div class="progress" id="progress"></div>
-            </div>
-            <!-- //progress_container -->
-        </div>
-        <!-- // music_info -->
 
-        <audio id="audio" src="./music/After the Rain.wav"></audio>
-        
+            <h4 id="music_title">After the Rain</h4>
+
+            <div class="progress_container" id="progress_container">
+                <div class="progress" id="proress"></div>
+            </div>
+            <!-- // progress_container-->
+        </div>
+        <!-- // music_info-->
+
+        <audio src="./music/After the Rain.wav"></audio>
+
         <div class="img_container">
-            <img id="music_cover" src="/img/unnamed.jpg" alt="">
+            <img class="music_cover" id="music_cover" src="./img/unnamed.jpg" alt="misic_cover" >
         </div>
         <!-- //img_container -->
-    
+
         <div class="navigation">
             <button id="prev" class="action_btn">
                 <i class='bx bx-skip-previous'></i>
@@ -46,9 +48,13 @@
                 <i class='bx bx-skip-next' ></i>
             </button>
         </div>
+        <!-- // navigation-->
+
+
     </div>
     <!-- //music_container -->
 
     <script src="app.js"></script>
+
 </body>
 </html>
