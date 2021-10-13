@@ -66,11 +66,11 @@ playBtn.addEventListener('click', () => {
 
 function prevSong () {
     // 이전 음악
-    songIndex--;
+    songsIndex--;
     // 송인덱스를 하나씩 빼서 앞으로 가게한다
 
-    if(songIndex < 0) {
-        songIndex = songs.length -1;
+    if(songsIndex < 0) {
+        songsIndex = songs.length -1;
         // 만약 송인덱스가 0보다 작으면
         // songs.length -1;      -->
         // 노래가 3곡이라서 songs 배열의 길이는 3 인덱스는 0, 1, 2 라서 -1
@@ -84,11 +84,11 @@ function prevSong () {
 
 function nextSong () {
     // 다음 음악
-    songIndex++;
+    songsIndex++;
     // 송인덱스를 하나씩 빼서 앞으로 가게한다
 
-    if(songIndex > songs.length -1) {
-        songIndex = 0;
+    if(songsIndex > songs.length -1) {
+        songsIndex = 0;
         // 만약 송인덱스가 곡의 배열의 길이 -1보다 크면 
         // 인덱스를 0으로 해서 인덱스를 배열의 처음으로 보냄   -->
     }
